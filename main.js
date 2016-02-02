@@ -137,18 +137,53 @@
 // 		vowel:"o",
 // 		vowel:"u"
 // 	}
-// 	for (i=0; i < str.length; i++) {
+// 	for (var i=0; i < str.length; i++) {
 // 		if (str.length[i] === object.vowel) {
-// 			arr.push(str.length[i])
+// 			str.length[i].push(arr)
+// 			return arr
 // 		}
 // 	}
 // }
 // console.log(vowels('alabama'))
 
-// #8 
-var twins = function()
+// #8 Write a function called 'twins' which takes an array and returns true if every adjacent pair of items in the array is the same.
+// All arguments return true. 
+// var twins = function(twinsArray) {
+// 	for (var i = 0; i <= twinsArray.length; i++) {
+// 		if (twinsArray[i] === twinsArray[i + 1]) {
+// 			return true
+// 		}
+// 		else {
+// 			return false
+// 		}
+// 	}
+// }
 
+// #9 Write a function called 'or' which takes an array of booleans and returns true if any one of them is true. Given an empty array, return false. If you find an item that is true, the function should return true immediately and not continue checking further values.
 
+// var or = function(boolArray) {
+// 	for (var i = 0; i <= boolArray.length; i++) {
+// 		if (boolArray[i] === true){
+// 			return true
+// 		}
+// 		else if (boolArray[i] === undefined){
+// 			return false
+// 		}
+// 	}
+// }
+
+// #10 Write a function called 'unique' which takes an array of strings, and returns a new array consisting of the unique values (no duplicates).
+// Only returning the first letter of the string
+var unique = function(stringArray) {
+	var newArray = [];
+	for (var i = 0; i <= stringArray.length; i++) {
+		if (stringArray[i] !== newArray[i]) {
+			newArray.push(stringArray[i])
+			return newArray
+		}
+	}
+}
+console.log(unique(['a', 'b', 'a', 'c', 'd', 'd']))
 
 
 
